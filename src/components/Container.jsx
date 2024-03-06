@@ -5,7 +5,7 @@ const Container = ({ onClick, collapsedLabel, ...props }) => {
      return (
          <div className={collapsedLabel ? "container show" : "container"}>
               <Button id="collapsedLabel" onClick={onClick} />
-              <Button id="expandedLabel" onClick={onClick} />
+              <Button id="collapsedLabel" onClick={onClick} />
               <Content {...props }/>
          </div>
      )
